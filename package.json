@@ -33,10 +33,18 @@
     "@oclif/command": "^1",
     "@oclif/config": "^1",
     "@oclif/plugin-help": "^2",
+    "colors": "^1.4.0",
+    "fs-extra": "^8.1.0",
+    "glob": "^7.1.4",
+    "signale": "^1.4.0",
     "tslib": "^1"
   },
   "devDependencies": {
+    "@types/colors": "^1.2.1",
+    "@types/fs-extra": "^8.0.1",
+    "@types/glob": "^7.1.1",
     "@types/node": "^10",
+    "@types/signale": "^1.2.1",
     "husky": "^3.0.9",
     "prettier": "^1.18.2",
     "pretty-quick": "^2.0.0",
