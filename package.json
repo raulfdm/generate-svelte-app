@@ -1,7 +1,7 @@
 {
   "name": "generate-svelte-app",
   "description": "Quick way to start your svelte app",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "author": "Raul de Melo @raulfdm",
   "bin": {
     "generate-svelte-app": "./bin/run"
@@ -27,7 +27,8 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "prepack": "rm -rf lib && tsc -b",
-    "test": "echo NO TESTS"
+    "test": "echo NO TESTS",
+    "release": "semantic-release"
   },
   "dependencies": {
     "@oclif/command": "^1",
@@ -40,6 +41,9 @@
     "tslib": "^1"
   },
   "devDependencies": {
+    "@semantic-release/commit-analyzer": "^6.3.0",
+    "@semantic-release/npm": "^5.2.0",
+    "@semantic-release/release-notes-generator": "^7.3.0",
     "@types/colors": "^1.2.1",
     "@types/fs-extra": "^8.0.1",
     "@types/glob": "^7.1.1",
@@ -48,6 +52,7 @@
     "husky": "^3.0.9",
     "prettier": "^1.18.2",
     "pretty-quick": "^2.0.0",
+    "semantic-release": "^15.13.27",
     "ts-node": "^8",
     "typescript": "^3.3"
   },
