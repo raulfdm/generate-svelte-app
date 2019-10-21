@@ -1,0 +1,43 @@
+{
+  "name": "generate-svelte-app",
+  "description": "Easier wait to start your svelte app",
+  "version": "1.0.0",
+  "author": "Raul de Melo @raulfdm",
+  "bin": {
+    "generate-svelte-app": "./bin/run"
+  },
+  "bugs": "https://github.com/raulfdm/generate-svelte-app/issues",
+  "dependencies": {
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "@oclif/plugin-help": "^2",
+    "tslib": "^1"
+  },
+  "devDependencies": {
+    "@types/node": "^10",
+    "ts-node": "^8",
+    "typescript": "^3.3"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/lib"
+  ],
+  "homepage": "https://github.com/raulfdm/generate-svelte-app",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "oclif": {
+    "bin": "generate-svelte-app"
+  },
+  "repository": "raulfdm/generate-svelte-app",
+  "scripts": {
+    "prepack": "rm -rf lib && tsc -b",
+    "test": "echo NO TESTS"
+  },
+  "types": "lib/index.d.ts"
+}
