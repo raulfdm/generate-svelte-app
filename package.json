@@ -1,26 +1,12 @@
 {
   "name": "generate-svelte-app",
-  "description": "Easier wait to start your svelte app",
+  "description": "Quick way to start your svelte app",
   "version": "1.0.0",
   "author": "Raul de Melo @raulfdm",
   "bin": {
     "generate-svelte-app": "./bin/run"
   },
   "bugs": "https://github.com/raulfdm/generate-svelte-app/issues",
-  "dependencies": {
-    "@oclif/command": "^1",
-    "@oclif/config": "^1",
-    "@oclif/plugin-help": "^2",
-    "tslib": "^1"
-  },
-  "devDependencies": {
-    "@types/node": "^10",
-    "husky": "^3.0.9",
-    "prettier": "^1.18.2",
-    "pretty-quick": "^2.0.0",
-    "ts-node": "^8",
-    "typescript": "^3.3"
-  },
   "engines": {
     "node": ">=8.0.0"
   },
@@ -38,11 +24,25 @@
     "bin": "generate-svelte-app"
   },
   "repository": "raulfdm/generate-svelte-app",
+  "types": "lib/index.d.ts",
   "scripts": {
     "prepack": "rm -rf lib && tsc -b",
     "test": "echo NO TESTS"
   },
-  "types": "lib/index.d.ts",
+  "dependencies": {
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "@oclif/plugin-help": "^2",
+    "tslib": "^1"
+  },
+  "devDependencies": {
+    "@types/node": "^10",
+    "husky": "^3.0.9",
+    "prettier": "^1.18.2",
+    "pretty-quick": "^2.0.0",
+    "ts-node": "^8",
+    "typescript": "^3.3"
+  },
   "husky": {
     "hooks": {
       "pre-commit": "pretty-quick --staged"
