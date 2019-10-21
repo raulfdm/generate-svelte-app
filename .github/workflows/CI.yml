@@ -1,4 +1,4 @@
-name: Node CI
+name: Release at NPM
 
 on: [push]
 
