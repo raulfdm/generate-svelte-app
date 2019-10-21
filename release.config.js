@@ -1,6 +1,6 @@
 module.exports = {
   branch: 'master',
-  repositoryUrl: 'https://github.com/raulfdm/generate-svelte-app',
+  repositoryUrl: 'git@github.com:raulfdm/generate-svelte-app.git',
   plugins: [
     '@semantic-release/commit-analyzer',
     '@semantic-release/release-notes-generator',
