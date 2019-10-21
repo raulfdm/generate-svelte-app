@@ -16,7 +16,11 @@
   ],
   "homepage": "https://github.com/raulfdm/generate-svelte-app",
   "keywords": [
-    "oclif"
+    "svelte",
+    "svelte app",
+    "app starter",
+    "spa starter",
+    "create-svelte-app"
   ],
   "license": "MIT",
   "main": "lib/index.js",
