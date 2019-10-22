@@ -10,7 +10,9 @@ class GenerateSvelteApp extends Command {
     help: flags.help({ char: 'h' }),
     // flag with a value (-n, --name=VALUE)
     name: flags.string({ char: 'n', description: 'name to print' }),
-    npm: flags.boolean({ description: 'Sets to use npm instead yarn' }),
+    npm: flags.boolean({
+      description: 'Sets to install dependencies using npm instead yarn',
+    }),
   };
 
   async run() {
