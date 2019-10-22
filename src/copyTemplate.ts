@@ -77,8 +77,6 @@ export function copyTemplate({ projectName, useNpm }: CopyTemplate) {
 
     const files = await globPromise(`${TEMPLATE_PATH}/**/*`);
 
-    console.log('files', files);
-
     return files.filter(removeFolders);
   }
 
