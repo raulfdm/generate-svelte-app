@@ -90,7 +90,7 @@ export function copyTemplate({ projectName, useNpm }: CopyTemplate) {
   }
 
   function installDependencies() {
-    signale.info('Installing dependencies with Yarn\n');
+    signale.info(`Installing dependencies with ${chosenPackageManager}\n`);
 
     spawnSync(chosenPackageManager, ['install'], {
       stdio: 'inherit',
