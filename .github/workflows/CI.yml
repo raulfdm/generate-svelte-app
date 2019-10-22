@@ -19,7 +19,7 @@ jobs:
       - name: Release
         run: |
           yarn
-          GH_TOKEN=${{ secrets.GH_TOKEN }} NPM_TOKEN=${{ secrets.NPM_TOKEN }} yarn release --branch=${{ secrets.GITHUB_REF }}
+          GH_TOKEN=${{ secrets.GH_TOKEN }} NPM_TOKEN=${{ secrets.NPM_TOKEN }} yarn release --branch=${GITHUB_REF##*/}
 
         env:
           CI: true
