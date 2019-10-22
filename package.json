@@ -12,7 +12,8 @@
   },
   "files": [
     "/bin",
-    "/lib"
+    "/lib",
+    "/template"
   ],
   "homepage": "https://github.com/raulfdm/generate-svelte-app",
   "keywords": [

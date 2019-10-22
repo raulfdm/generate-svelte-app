@@ -12,7 +12,7 @@ import { PackageJson, CopyTemplate } from './types';
 const globPromise = promisify(glob);
 
 const CWD_PATH = process.cwd();
-const TEMPLATE_PATH = path.resolve(__dirname, 'template');
+const TEMPLATE_PATH = path.resolve(__dirname, '../template');
 
 export function copyTemplate({ projectName, useNpm }: CopyTemplate) {
   const PROJECT_PATH = path.resolve(CWD_PATH, projectName);
@@ -76,6 +76,8 @@ export function copyTemplate({ projectName, useNpm }: CopyTemplate) {
     }
 
     const files = await globPromise(`${TEMPLATE_PATH}/**/*`);
+
+    console.log('files', files);
 
     return files.filter(removeFolders);
   }
